@@ -24,7 +24,35 @@
             <h1>Pokedex</h1>
             <img src="img/pokeball.png" alt="Pokeball">
         </div>
-
+        <div class="optionsDiv">
+            <div class="select">
+                <select name="filter-poke" id="poke-type-filter" >
+                   <!-- <option selected disabled >Choose a Type</option>
+                    <option>all</option> -->
+                    <option value="all">all</option>
+                    <option value="bug">bug</option>
+                    <option value="dragon">dragon</option>
+                    <option value="electric">electric</option>
+                    <option value="fairy">fairy</option>
+                    <option value="fighting">fighting</option>
+                    <option value="fire">fire</option>
+                    <option value="flying">flying</option>
+                    <option value="ghost">ghost</option>
+                    <option value="grass">grass</option>
+                    <option value="ground">ground</option>
+                    <option value="ice">ice</option>
+                    <option value="normal">normal</option>
+                    <option value="poison">poison</option>
+                    <option value="psychic">psychic</option>
+                    <option value="rock">rock</option>
+                    <option value="steel">steel</option>
+                    <option value="water">water</option>
+                </select>
+            </div>
+            <!-- <div>
+                <input class="seasons-btn" id="firstSeasonBtn" type="button" value="Show All">    
+            </div> -->
+        </div>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -36,6 +64,15 @@
         </div>
 
     </section>
+
+    <div class="modal" id="modal-id">
+        <div id="modalpoke">Pokemon com detalhes
+            <input type="button" value="X" class="closeButton">
+        </div>
+    </div>
+
+
+
 
     <script src="Js/poke-api.js"></script>
     <script src="Js/main.js"></script>
